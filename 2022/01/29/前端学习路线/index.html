@@ -16,12 +16,12 @@
     
 <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="shortcut icon" href="/images/head.bmp">
+    <link rel="shortcut icon" href="/images/shasha.png">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/css/font-awesome.min.css">
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
     KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
-    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/head.bmp","favicon":"/images/head.bmp","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.5"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/shasha.png","favicon":"/images/shasha.png","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"爱生活爱代码."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
 <meta name="generator" content="Hexo 6.0.0"></head>
@@ -159,7 +159,7 @@
         
             <div class="article-header">
                 <div class="avatar">
-                    <img src="/images/head.bmp">
+                    <img src="/images/shasha.png">
                 </div>
                 <div class="info">
                     <div class="author">
@@ -179,7 +179,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>249 Words</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>323 Words</span>
         </span>
     
     
@@ -217,13 +217,20 @@
 </li>
 <li><p>大前端的过渡阶段，把常见名词了解了一下</p>
 <blockquote>
-<p>我看的是<a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1BU4y147pS?share_source=copy_web" >学相伴的视频<i class="fas fa-external-link-alt"></i></a>，他没讲到一些服务端的东西，比如MongoDB、Koa，可以自行了解</p>
+<p>其实是看了<a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1BU4y147pS?share_source=copy_web" >学相伴的视频<i class="fas fa-external-link-alt"></i></a>才写了这个阶段，往后有其他也会加进来</p>
 </blockquote>
 </li>
 <li><p>做毕设，第一次全栈项目，技术栈够新够标准，不会现学。</p>
+<blockquote>
+<p>其实也算一个进阶、大量学习和长期规划的过程，参考了很多XX教学视频、官方文档、论坛上的学习路径之类的，也在为工作准备</p>
+</blockquote>
 </li>
 </ol>
-
+<h2 id="在这放一点好东西"><a href="#在这放一点好东西" class="headerlink" title="在这放一点好东西"></a>在这放一点好东西</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.yuque.com/fe9/basic" >前端九部-入门者手册<i class="fas fa-external-link-alt"></i></a></li>
+<li>…</li>
+</ul>
+<h4 id="更新于2022年2月10日16-22-15"><a href="#更新于2022年2月10日16-22-15" class="headerlink" title="更新于2022年2月10日16:22:15"></a>更新于2022年2月10日16:22:15</h4>
         </div>
 
         
@@ -252,6 +259,63 @@
             </div>
         
 
+        
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;Comments</i>
+    </div>
+    
+
+        
+            
+    <div id="gitalk-container"></div>
+    <script data-pjax
+            src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+    <script data-pjax>
+
+        function loadGitalk() {
+            let __gitalk__pathname = decodeURI(location.pathname);
+            const __gitalk__pathnameLength = __gitalk__pathname.length;
+            const __gitalk__pathnameMaxLength = 50;
+            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
+                __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
+            }
+
+            try {
+                Gitalk && new Gitalk({
+                    clientID: 'efa69766e23ddf342235',
+                    clientSecret: '5ee5fa7a06804cc01e21c3028d7c116ab31d3dc5',
+                    repo: 'blog-comments',
+                    owner: 'zsjhd',
+                    admin: ['zsjhd'],
+                    id: __gitalk__pathname,
+                    language: 'en'
+                }).render('gitalk-container');
+
+            } catch (e) {
+                window.Gitalk = null;
+            }
+        }
+
+        if ('true') {
+            const loadGitalkTimeout = setTimeout(() => {
+                loadGitalk();
+                clearTimeout(loadGitalkTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadGitalk);
+        }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
         
     </div>
 </div>
@@ -312,6 +376,10 @@
 
         <!-- go comment -->
         
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
+        
     </ul>
 </div>
 
@@ -365,7 +433,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF"><span class="nav-number">1.</span> <span class="nav-text">我的前端学习路线</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF"><span class="nav-number">1.</span> <span class="nav-text">我的前端学习路线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E8%BF%99%E6%94%BE%E4%B8%80%E7%82%B9%E5%A5%BD%E4%B8%9C%E8%A5%BF"><span class="nav-number">2.</span> <span class="nav-text">在这放一点好东西</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E4%BA%8E2022%E5%B9%B42%E6%9C%8810%E6%97%A516-22-15"><span class="nav-number">2.0.1.</span> <span class="nav-text">更新于2022年2月10日16:22:15</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
         </aside>
